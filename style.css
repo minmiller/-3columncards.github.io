@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+.wrapper {
+    border-radius: 10px;
+    width: 340px; 
+    margin-left: 10px;
+    margin-top: 70px; 
+}
+.column {
+    float: left;
+    width: 33.33%;
+    height: 465px;
+    padding-left: 45px; 
+    padding-right: 60px;
+    padding-top: 50px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+@media screen and (max-width: 959px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+h1 {
+    color: hsl(0, 0%, 95%); 
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 45px; 
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75); 
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px; 
+    text-align: left;
+    line-height: 1.8; 
+    margin-top: 25px; 
+}
+
+button {
+    cursor: pointer; 
+    margin-top: 10px; 
+    background-color: hsl(0, 0%, 95%);
+    height: 45px; 
+    width: 150px; 
+    border-radius: 50px; 
+    -webkit-transition : border 1ms ease-out;
+    -moz-transition : border 1ms ease-out;
+    -o-transition : border 1ms ease-out;
+    transition : border 1ms ease-out;
+    border: solid transparent; 
+    font-size: 17px; 
+}
+
+.button1 {
+    color: hsl(31, 77%, 52%); 
+}
+.button2 {
+    color: hsl(184, 100%, 22%); 
+}
+.button3 {
+    color:hsl(179, 100%, 13%); 
+}
+
+.button1:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%); 
+    border-color: hsl(0, 0%, 95%); 
+}
+.button2:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%); 
+    border-color: hsl(0, 0%, 95%);
+}
+.button3:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%); 
+    border-color: hsl(0, 0%, 95%);
+}
+
+/* desktop */ 
+@media screen and (min-width: 960px ){
+    .wrapper{
+        width: 945px;  
+        margin-top: 105px; 
+        margin-left: 230px; 
+
+    }
+    .column {
+        height: 550px; 
+    }
+    button {
+        margin-top: 85px;  
+    }
+}
+
+
